@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       body{
+        background-color: rgb(7, 7, 66);
+        color: white;
+       }
+       nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color:  rgb(9, 9, 111);
+       }
+       nav ul{
+        display: flex;
+       }
+       nav ul li{
+        list-style: none;
+        margin: 0 20px;
+       }
+       nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+       }
+       nav ul li a:hover{
+        color:rgb(153, 153, 241);
+       }
+       .hover-line::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: rgb(236, 236, 178);
+        transition: width .3s;
+       }
+       .hover-line:hover::after{
+        width: 100%;
+        transition:width 1s;;
+       }
+       main hr{
+        border: 0;
+        background: rgb(82, 82, 196);
+        height: 1.2px;
+        margin: 40px 84px;
+       }
+       .left{
+        font-size: 1.3rem;
+       }
+       .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 120px 0;
+       }
+       .firstsection >div{
+        width: 30%;
+       
+       }
+       .leftsection{
+        font-size: 3rem;
+       }
+       
+       .leftsection .btn{
+        padding: 10px;
+        background: rgb(15, 35, 143);
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        border: 2px solid white;
+        border-radius: 8px;
+       }
+       .leftsection .buttons{
+        padding: 50px 0;
+       }
+       .rightsection img{
+        width: 80%;
+       }
+       .purple{
+        color: rgb(177, 99, 245);
+       }
+       #element{
+        color:  rgb(177, 99, 245);
+       }
+       .secondsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+       }
+       .secondsection h1{
+        font-size: 1.8rem;
+       }
+       .text-gray{
+        color: grey;
+       }
+       .box{
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+       }
+       .vertical{
+        height: 90px;
+        width: 1px;
+        background-color:white;
+        margin: 0 100px;
+       }
+       .image-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+       }
+       .vertical-title{
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+       }
+       .vertical-desc{
+        position: relative;
+        top: 85px;
+        color: grey;
+        font-size: 10px;
+        width: 150px;
+       }
+       footer{
+        background-color: rgb(18, 18, 83);
+
+       }
+       .footer{
+        display: flex;
+        padding: 20px 122px;
+        justify-content: space-between;
+       }
+        .footer ul{
+            list-style: none;
+        }
+       .footer > div{
+        width: 220px;
+       }
+       .footer-rights{
+        text-align: center;
+        color: rgb(151, 149, 149);
+        padding: 12px 0;
+       }
+       .footer-mid{
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .footer-mid a{
+        height: 40px;
+        width: 40px;
+        background-color:rgb(181, 163, 163);
+        border-radius: 40px;
+        text-align: center;
+        margin: 10px;
+        line-height: 40px;
+       }
+       .footer-mid a i{
+        transition: all .3s;
+       }
+       .footer-mid a:hover i{
+        font-size: 20px;
+       }
+       .fa-square-facebook{
+        color: blue;
+       }
+       .fa-instagram{
+        color: rgb(135, 20, 135);
+       }
+       .fa-youtube{
+        color: rgb(233, 14, 14);
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Divyan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/" class="hover-line">Home</a></li>
+                    <li><a href="/" class="hover-line">About</a></li>
+                    <li><a href="/" class="hover-line">Services</a></li>
+                    <li><a href="/" class="hover-line">Projects</a></li>
+                    <li><a href="/" class="hover-line">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi i am a <span class="purple">Divyan</span>
+                <div> and I am a Passionate</div>
+                
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <button class="btn">Download Resume</button>
+                        <button class="btn">Visit Github</button>
+                    </div>
+            </div>
+            <div class="rightsection">
+                <img src="images/deve.png">
+            </div>
+        </section>
+<hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Expierience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/html.png">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Many factors influence whether education is successful. Psychological factors include motivation, intelligence,
+                        and personality. Social factors ethnicity, and gender, are often linked to discrimination.
+                       Further factors include educational technology, teacher quality, and parent involvement.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/deve.png">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Many factors influence whether education is successful. Psychological factors include motivation, intelligence,
+                        and personality. Social factors ethnicity, and gender, are often linked to discrimination.
+                       Further factors include educational technology, teacher quality, and parent involvement.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/deve.png">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Many factors influence whether education is successful. Psychological factors include motivation, intelligence,
+                        and personality. Social factors ethnicity, and gender, are often linked to discrimination.
+                       Further factors include educational technology, teacher quality, and parent involvement.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/deve.png">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Many factors influence whether education is successful. Psychological factors include motivation, intelligence,
+                        and personality. Social factors ethnicity, and gender, are often linked to discrimination.
+                       Further factors include educational technology, teacher quality, and parent involvement.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/deve.png">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Many factors influence whether education is successful. Psychological factors include motivation, intelligence,
+                        and personality. Social factors ethnicity, and gender, are often linked to discrimination.
+                       Further factors include educational technology, teacher quality, and parent involvement.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/deve.png">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Many factors influence whether education is successful. Psychological factors include motivation, intelligence,
+                        and personality. Social factors ethnicity, and gender, are often linked to discrimination.
+                       Further factors include educational technology, teacher quality, and parent involvement.
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2>Divyan's Developer Portfolio</h2>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>projects</li>
+                    <li>services</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+            <ul>
+                <li>Home</li>
+                <li>about</li>
+                <li>projects</li>
+                <li>services</li>
+                <li>contact</li>
+            </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                <li>Home</li>
+                <li>about</li>
+                <li>projects</li>
+                <li>services</li>
+                <li>contact</li>
+            </ul>
+            </div>
+
+        </div>
+        <div class="footer-mid">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/varshney4675" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-rights">
+            Copyright &copy; divyanportfolio.com | All rights reserved
+        </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/5376355c25.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Graphic Designer','Web Designer'],
+          typeSpeed: 80,
+        });
+      </script>
+</body>
+</html>
